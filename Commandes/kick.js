@@ -37,7 +37,7 @@ module.exports = {
             if (member && message.member.roles.highest.comparePositionTo(member.roles.highest) <= 0) return message.reply("Vous ne pouvez pas kick ce membre !")
             
 
-            try { await user.send(`Tu as été banni du serveur ${message.guild.name} par ${message.user.tag} pour la raison : \`${reason}\``) } catch (err) { }
+            try { await user.send(`Tu as été kick du serveur ${message.guild.name} par ${message.user.tag} pour la raison : \`${reason}\``) } catch (err) { }
 
             await message.reply(`${message.user} a kick ${user.tag} pour la raison : \`${reason}\``)
 
